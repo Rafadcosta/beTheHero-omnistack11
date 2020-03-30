@@ -1,15 +1,16 @@
 import React from 'react';
-// import { FiLogIn } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import { FiLogIn } from 'react-icons/fi';
 
 import './styles.css';
 
 import heroesImg from '../../assets/heroes.png';
 import logoImg from '../../assets/logo.svg';
-import sigImg from '../../assets/log-in.svg';
+// import sigImg from '../../assets/log-in.svg';
 
 export default function Logon(){
     return (
-        <div className="logon-Container">
+        <div className="logon-container">
             <section className="form">
                 <img src={logoImg} alt="Be The Hero" />
 
@@ -17,12 +18,13 @@ export default function Logon(){
                     <h1>Faça seu Logon</h1>
 
                     <input placeholder="Sua ID"/>
-                    <button type="submit">Entrar</button>
+                    <button className="button" type="submit">Entrar</button>
 
-                    <a href="/register">
-                        <img src={sigImg} alt="Be The Hero" /> 
+                    <Link className="back-link"to="/register">
+                        {/* <img src={sigImg} alt="Be The Hero" />  */}
+                        <FiLogIn  size={16} color="#e02041"/>
                         Não tenho cadastro
-                    </a>
+                    </Link>
                 </form>
             </section>
             
