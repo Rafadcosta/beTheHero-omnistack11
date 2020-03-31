@@ -76,6 +76,7 @@ export default function Profile(){
                         <FiTrash2 size={20} color="#a8a8b3"/>
                     </button>
                 </li>
+                
             </ul>
         </div>
     );
