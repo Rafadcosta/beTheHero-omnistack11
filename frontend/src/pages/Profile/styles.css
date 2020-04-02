@@ -34,10 +34,13 @@
     background: transparent;
     margin-left: 16px;
     transition: border-color 0.2s;
+    transition: border-radius 0.6s;
+
 }
 
 .profile-container header button:hover{
     border-color: #999;
+    border-radius: 50%;
 }
 
 .profile-container  h1{
